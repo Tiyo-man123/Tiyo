@@ -11,7 +11,7 @@ struct Student {
     float  numGrades;
     float averageGPA;
     int year;
-	float phone;
+	int phone;
     
 };
 
@@ -32,9 +32,11 @@ void addStudent() {
   int year ; 
           cout << "Enter year of admission : ";
            cin>>students[count].year;
+          
    int phone ; 
-          cout << "Enter phone number : ";
+          cout << "Enter phone number  : ";
            cin>>students[count].phone;
+          
        
   
      int numGrades;
@@ -81,7 +83,7 @@ void update(int id) {
          cout << "|   3.N.o of corse taken " << students[i].numGrades<<endl;
 		cout << "|   4.GPA : "<< students[i].averageGPA << endl;
 		cout << "|   5.year of addmission : "<<students[i].year<< endl;
-		cout << "|   6.phone number : "<<students[i].phone<< endl;
+		cout << "|   6.phone number : "<<"0"<<students[i].phone<< endl;
 		cout <<"|"<< "__________________________________"<<endl<<endl<<endl<<endl;
 		cin>>choice;
 		 switch(choice)
@@ -131,7 +133,7 @@ void searchStudent(int id) {
          cout << "|   N.o of corse taken : " << students[i].numGrades<<endl;
 		cout << "|   GPA : "<< students[i].averageGPA << endl;
 		cout << "|   year of addmission : "<<students[i].year<< endl;
-		cout << "|   phone number : "<<students[i].phone<< endl;
+		cout << "|   phone number : "<<"0"<<students[i].phone<< endl;
 		
 		cout <<"|"<< "__________________________________"<<endl<<endl<<endl<<endl;
 		cout<<endl<<endl<<endl<<endl<<endl;
